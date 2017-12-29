@@ -27,5 +27,12 @@ namespace Commentifier.Controllers
             var response = _invitationsRepository.AddWithValidation(invitation);
             return Json(new { response });
         }
+
+        [HttpGet]
+        [ActionName("GetTest")]
+        public IEnumerable<string> GetTest()
+        {
+            return new string[] { "value1", "value2" };
+        }
     }
 }
