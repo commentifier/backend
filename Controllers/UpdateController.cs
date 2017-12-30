@@ -17,7 +17,6 @@ namespace Commentifier.Controllers
             _config = config;
 		}
 
-		// POST api/update
 		[HttpPost]
 		public void Post([FromBody]Update update)
 		{
